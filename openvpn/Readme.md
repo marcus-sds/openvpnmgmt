@@ -15,3 +15,7 @@
 - config creation
 - key creation
 openvpn --genkey --secret /etc/openvpn/static.key
+
+### p2p vpn failover
+
+### vpn gateway failover
