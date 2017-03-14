@@ -3,6 +3,7 @@
 - install openvpn
 - pem creation
 - network forwarding
+net.ipv4.ip_forward = 1
 - nat or not
 
 ### vpn gateway creation
@@ -15,6 +16,8 @@
 - config creation
 - key creation
 openvpn --genkey --secret /etc/openvpn/static.key
+
+https://en.wikipedia.org/wiki/Hash-based_message_authentication_code
 
 ### p2p vpn failover
 
