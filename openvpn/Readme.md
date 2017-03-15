@@ -1,3 +1,6 @@
+### ssl negotiation
+![ssl](https://tender.eprocurement.gov.in/DigitalCertificate/faqs/images/SSL.jpg)
+
 ### sslvpn
 ![sslvpn](https://community.jisc.ac.uk/system/files/images/tg-vpn-17.jpg)
 
