@@ -1,7 +1,7 @@
 ### how to install openvpn
 - os
 - install openvpn
-- pem creation
+- cert,dh file creation
 - network forwarding
 >net.ipv4.ip_forward = 1
 - nat or not
@@ -23,7 +23,7 @@ Wed Mar 15 08:23:49 2017 Control Channel: TLSv1.2, cipher TLSv1/SSLv3 DHE-RSA-AE
 - install openvpn
 - config creation
 - key creation
-openvpn --genkey --secret /etc/openvpn/static.key
+> openvpn --genkey --secret /etc/openvpn/static.key
 
 https://en.wikipedia.org/wiki/Hash-based_message_authentication_code
 
