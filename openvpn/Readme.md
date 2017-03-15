@@ -12,8 +12,7 @@
 - two-factor authentication
 
 - vpn client log
-*
-Wed Mar 15 08:23:48 2017 TLS: Initial packet from [AF_INET]
+> Wed Mar 15 08:23:48 2017 TLS: Initial packet from [AF_INET]
 Wed Mar 15 08:23:48 2017 VERIFY OK: depth=1, C=US, ST=CA, L=SanFrancisco, O=Fort-Funston, OU=changeme, CN=changeme, name=changeme, emailAddress=mail@host.domain
 Wed Mar 15 08:23:48 2017 VERIFY OK: nsCertType=SERVER
 Wed Mar 15 08:23:48 2017 VERIFY OK: depth=0, C=US, ST=CA, L=SanFrancisco, O=Fort-Funston, OU=changeme, CN=changeme, name=changeme, emailAddress=mail@host.domain
