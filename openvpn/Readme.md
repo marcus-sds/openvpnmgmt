@@ -3,7 +3,7 @@
 - install openvpn
 - pem creation
 - network forwarding
-net.ipv4.ip_forward = 1
+>net.ipv4.ip_forward = 1
 - nat or not
 
 ### vpn gateway creation
