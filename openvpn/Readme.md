@@ -1,5 +1,5 @@
 ### iptable
-![iptabl](https://www.frozentux.net/iptables-tutorial/images/tables_traverse.jpg =600x300)
+<img src="https://www.frozentux.net/iptables-tutorial/images/tables_traverse.jpg" width="400">
 
 ### ssl negotiation
 ![ssl](https://tender.eprocurement.gov.in/DigitalCertificate/faqs/images/SSL.jpg)
