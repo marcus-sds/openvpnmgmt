@@ -1,10 +1,13 @@
 
 yum install -y pam-devel gcc<br>
-wget https://google-authenticator.googlecode.com/files/libpam-google-authenticator-1.0-source.tar.bz2<br>
-tar xvf libpam-google-authenticator-1.0-source.tar.bz2<br>
-cd libpam-google-authenticator-1.0<br>
+wget https://github.com/google/google-authenticator-libpam/archive/1.03.tar.gz<br>
+tar xvfz 1.03.tar.gz<br>
+cd google-authenticator-libpam-*<br>
+yum install -y libtool automake autoconf<br>
+./configure<br>
 make<br>
 make install<br>
+cp google-authenticator /usr/bin/
 ls -al /lib64/security/pam_google_authenticator.so<br>
 
 
