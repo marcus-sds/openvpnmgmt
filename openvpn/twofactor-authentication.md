@@ -1,14 +1,14 @@
 
-yum install -y pam-devel gcc
-wget https://google-authenticator.googlecode.com/files/libpam-google-authenticator-1.0-source.tar.bz2
-tar xvf libpam-google-authenticator-1.0-source.tar.bz2
-cd libpam-google-authenticator-1.0
-make
-make install
-ls -al /lib64/security/pam_google_authenticator.so
+yum install -y pam-devel gcc<br>
+wget https://google-authenticator.googlecode.com/files/libpam-google-authenticator-1.0-source.tar.bz2<br>
+tar xvf libpam-google-authenticator-1.0-source.tar.bz2<br>
+cd libpam-google-authenticator-1.0<br>
+make<br>
+make install<br>
+ls -al /lib64/security/pam_google_authenticator.so<br>
 
 
-
+<pre>
 [root@vpn-sec.mgmt.dev ()~]# cat /etc/pam.d/openvpn
 # google auth
 #auth        required    /usr/local/lib/security/pam_google_authenticator.so
@@ -33,8 +33,8 @@ session    required     pam_namespace.so
 session    optional     pam_keyinit.so force revoke
 session    include      system-auth
 -session   optional     pam_ck_connector.so
-
-
+</pre>
+<pre>
 [root@vpn-sec.mgmt.dev ()~]# tail /etc/openvpn/server.conf
 log-append  openvpn.log
 
@@ -46,3 +46,4 @@ plugin /usr/share/openvpn/plugin/lib/openvpn-auth-pam.so openvpn
 client-cert-not-required
 username-as-common-name
 reneg-sec 0
+</pre>
