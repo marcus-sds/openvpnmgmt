@@ -10,6 +10,8 @@ make install<br>
 cp google-authenticator /usr/bin/
 ls -al /lib64/security/pam_google_authenticator.so<br>
 
+## systemctl has some issue when using two factor authentication.  you can start with command with vpn
+#/usr/sbin/openvpn --cd /etc/openvpn/ --config server.conf
 
 <pre>
 [root@vpn-sec.mgmt.dev ()~]# cat /etc/pam.d/openvpn
