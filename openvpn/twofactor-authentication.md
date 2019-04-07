@@ -63,10 +63,12 @@ reneg-sec 0
 
 ## ubuntu install
   
-    wget https://github.com/google/google-authenticator-libpam/archive/1.03.tar.gz<br>
-    tar xvfz 1.03.tar.gz<br>
-    cd google-authenticator-libpam-*<br>
+    wget https://github.com/google/google-authenticator-libpam/archive/1.03.tar.gz
+    tar xvfz 1.03.tar.gz
+    cd google-authenticator-libpam-*
     apt-get install libpam0g-dev libtool automake autoconf
+    ./bootstrap.sh
+    ./configure
     make
     make install
     
