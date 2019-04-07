@@ -1,14 +1,24 @@
+## centos install
 
-yum install -y pam-devel gcc<br>
-wget https://github.com/google/google-authenticator-libpam/archive/1.03.tar.gz<br>
-tar xvfz 1.03.tar.gz<br>
-cd google-authenticator-libpam-*<br>
-yum install -y libtool automake autoconf<br>
-./configure<br>
-make<br>
-make install<br>
-cp google-authenticator /usr/bin/
-ls -al /lib64/security/pam_google_authenticator.so<br>
+    yum install -y pam-devel gcc<br>
+    wget https://github.com/google/google-authenticator-libpam/archive/1.03.tar.gz<br>
+    tar xvfz 1.03.tar.gz<br>
+    cd google-authenticator-libpam-*<br>
+    yum install -y libtool automake autoconf<br>
+    ./configure<br>
+    make<br>
+    make install<br>
+    cp google-authenticator /usr/bin/
+    ls -al /lib64/security/pam_google_authenticator.so<br>
+
+## ubuntu install
+  
+    wget https://github.com/google/google-authenticator-libpam/archive/1.03.tar.gz<br>
+    tar xvfz 1.03.tar.gz<br>
+    cd google-authenticator-libpam-*<br>
+    apt-get install libpam0g-dev libtool automake autoconf
+    make
+    make install
 
 ## systemctl has some issue when using two factor authentication.  you can start with command with vpn
 #/usr/sbin/openvpn --cd /etc/openvpn/ --config server.conf
